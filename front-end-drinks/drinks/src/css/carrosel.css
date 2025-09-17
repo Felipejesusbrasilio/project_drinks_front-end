@@ -1,0 +1,109 @@
+.buttons
+{
+	/*border: 1px solid black;*/
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.buttons svg 
+{
+	width: 50px;
+	height: 50px;
+	color: black;
+}
+
+.buttons svg:hover 
+{
+	color: lime;
+	transition: 0.3s;
+}
+
+.carrosel
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 500px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+	display: flex;
+    overflow-x: auto;   /* permite scroll horizontal */
+    scroll-snap-type: x mandatory; /* faz snap em cada item */
+    gap: 20px; /* espaçamento entre os quadros */
+}
+
+.carrosel::-webkit-scrollbar {
+    display: none; /* esconde a barra de rolagem */
+}
+
+.carrosel .quadros-carrosel
+{
+	/*border: 1px solid black;*/
+	width: 400px;
+	height: 450px;
+	flex: 0 0 auto; /* impede que os itens encolham */
+  scroll-snap-align: start;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  background-color: white;
+}
+
+
+.carrosel .quadros-carrosel .img 
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 150px;
+	display: grid;
+	place-items: center;
+}
+
+.carrosel .quadros-carrosel .nome 
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 50px;
+}
+
+.carrosel .quadros-carrosel .valor
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 50px;
+}
+
+.carrosel .quadros-carrosel .sabor
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 50px;
+}
+
+
+.carrosel .quadros-carrosel .button
+{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 50px;
+}
+
+.carrosel .quadros-carrosel .button button 
+{
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	background-color: lime;
+	color: white;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 600px)
+{
+	.carrosel .quadros-carrosel
+	{
+		width: 300px;
+	}
+}

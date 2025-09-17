@@ -1,0 +1,44 @@
+.cadastrar
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.cadastrar form 
+{
+	border: 1px solid lightblue;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+.cadastrar form input 
+{
+	outline: none;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: lightgray;
+	padding: 10px;
+}
+
+
+.cadastrar form button 
+{
+	width: 200px;
+	height: 50px;
+	border-style: none;
+	background-color: lime;
+	color: white;
+	font-weight: 600;
+	border-radius: 10px;
+}
